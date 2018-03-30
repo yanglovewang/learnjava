@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<audio controls="controls" autoplay="autoplay">
+  <source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg" />
+Your browser does not support the audio element.
+</audio>
+<script type="text/javascript">
+var loop = function() {
+	var au = document.querySelector('audio')
+	console.log(au)
+	au.loop = true
+	au.hidden = true
+}
+loop()
+</script>
+</body>
+</html>
