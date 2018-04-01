@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>penpen</title>
+	<style type="text/css">
+		body {
+			background-color: gray;
+		}
+		.blok {
+			width: 500px;
+			margin:auto;
+			border: 1px red solid;
+		}
+		.container {
+			background-color: white;
+			margin:20% auto;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-align: center;
+			width: 80%;
+		}
+		.title h1 {
+			color: #0084ff;
+		}
+
+		.login-input input {
+			width: 300px;
+			height: 40px;
+			margin-bottom: 20px;
+			border:none;
+			border-bottom: 1px #ebebeb solid;
+			outline: none;
+		}
+		.login-buttons button {
+			border: none;
+			outline: none;
+    		border: none;
+    		background-color: white;
+    		color: grey;
+		}
+		.login-botton-phone {
+			float: left;
+			margin-left: 20px;
+		}
+		.login-forget-pwd {
+			float: right;
+			margin-right: 20px;
+		}
+		span .login-button-login  {
+			background-color: #0084fe;
+    		color: white;
+    		width: 80%;
+    		padding-bottom: 15px;
+   			 padding-top: 15px;
+   			 margin-bottom: 20px;
+    		margin-top: 20px;
+    		border-radius: 10px;
+		}
+
+		button:hover {
+			cursor: pointer;
+			color: red;
+		}
+		 .div-footer {
+		 margin-top: 10px;
+		}
+		.div-footer span button{
+			color: #175199;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="blok">
+		<div class="container">
+		<div calss="inner">
+			<div class="title">
+			<h1><span>喷喷</span></h1>
+		</div>
+		<div class="login-input">
+			<input id="id-input-1" placeholder="用户名..." type="text" name="user"><br>
+			<input id="id-input-2" placeholder="密码..." type="password" name="pwd">
+		</div>
+		<div class="login-buttons">
+			<div >
+				<button class="login-botton-phone">
+					手机验证登录
+				</button>
+				<button class="login-forget-pwd">
+					忘记密码?
+				</button><br>
+				<span><button class="login-button-login">
+					登录
+				</button></span><br>
+				<button>社交网络登录</button>
+				<div class="div-footer">
+					<span>没有账号?</span>
+					<span class="regiter" data-reactid="1"><button class="button-regiter">注册</button></span>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+</body>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="pen.js"></script>
+</html>
