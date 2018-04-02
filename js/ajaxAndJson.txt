@@ -1,0 +1,16 @@
+1. 用ajax的post请求 数据是和get请求后面的参数一样
+json对象的格式是一个字典类型的字符串（死记）
+json数组是存放json对象的一个数组类型
+如果java后台要捕获前台的json数据那么就要用流来捕获
+response.setContentType("text/text");
+        response.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
+        ServletInputStream is = request.getInputStream();
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        String line=null;
+        while((line=br.readLine())!=null){
+        System.out.println(line); //{"username":"汤姆","password":"123"}
+        }
+		JSONObject obj = new JSONObject();
+		obj.put("zhang", "shuiqi");
+		out.println(obj);
