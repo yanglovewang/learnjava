@@ -1,0 +1,37 @@
+jquery选择器
+	$('#id')
+	$('.class')
+	$('tag')
+	
+常用事件
+click()			单击
+dblclick()		双击
+mouseenter()	鼠标穿过
+mouseleave()	鼠标离开
+mousedown()		鼠标移元素上方并且按下
+mouseup()		鼠标从元素上放掉
+hover()			光标悬停
+focus()			获取焦点
+blur()			失去焦点
+
+效果：
+隐藏、显示
+hide(speed, callback)				隐藏元素
+show(speed, callback)				显示元素
+淡入、淡出
+toogle(speed, callback)				开关元素
+fadeIn(speed, callback)				淡入隐藏元素
+fadeOut(speed, callback)			淡出隐藏元素
+fadeToggle(speed, callback)			开关淡入淡出
+fadeTo(speed, opacity, callback)	设置元素不透明度
+滑动
+$(selector).slideDown(speed,callback);	向下滑
+$(selector).slideUp(speed,callback);	向上滑
+$(selector).slideToggle(speed,callback);开关
+
+
+获取内容
+$(selector).html()			设置或获取元素中的HTML标记，设置内容时内容在括号内
+$(selector).text()			设置或获取元素中的内容，设置内容时内容在括号内
+$(selector).val()			设置或者获取表单元素中的值
+$(selector).attr(attribute)	获取元素的值		
