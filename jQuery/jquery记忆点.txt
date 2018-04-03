@@ -4,34 +4,75 @@ jquery选择器
 	$('tag')
 	
 常用事件
-click()			单击
-dblclick()		双击
-mouseenter()	鼠标穿过
-mouseleave()	鼠标离开
-mousedown()		鼠标移元素上方并且按下
-mouseup()		鼠标从元素上放掉
-hover()			光标悬停
-focus()			获取焦点
-blur()			失去焦点
+	click()			单击
+	dblclick()		双击
+	mouseenter()	鼠标穿过
+	mouseleave()	鼠标离开
+	mousedown()		鼠标移元素上方并且按下
+	mouseup()		鼠标从元素上放掉
+	hover()			光标悬停
+	focus()			获取焦点
+	blur()			失去焦点
 
 效果：
-隐藏、显示
-hide(speed, callback)				隐藏元素
-show(speed, callback)				显示元素
-淡入、淡出
-toogle(speed, callback)				开关元素
-fadeIn(speed, callback)				淡入隐藏元素
-fadeOut(speed, callback)			淡出隐藏元素
-fadeToggle(speed, callback)			开关淡入淡出
-fadeTo(speed, opacity, callback)	设置元素不透明度
-滑动
-$(selector).slideDown(speed,callback);	向下滑
-$(selector).slideUp(speed,callback);	向上滑
-$(selector).slideToggle(speed,callback);开关
+	隐藏、显示
+		hide(speed, callback)				隐藏元素
+		show(speed, callback)				显示元素
+	淡入、淡出
+		toogle(speed, callback)				开关元素
+		fadeIn(speed, callback)				淡入隐藏元素
+		fadeOut(speed, callback)			淡出隐藏元素
+		fadeToggle(speed, callback)			开关淡入淡出
+		fadeTo(speed, opacity, callback)	设置元素不透明度
+	滑动
+		$(selector).slideDown(speed,callback);	向下滑
+		$(selector).slideUp(speed,callback);	向上滑
+		$(selector).slideToggle(speed,callback);开关
 
-
-获取内容
-$(selector).html()			设置或获取元素中的HTML标记，设置内容时内容在括号内
-$(selector).text()			设置或获取元素中的内容，设置内容时内容在括号内
-$(selector).val()			设置或者获取表单元素中的值
-$(selector).attr(attribute)	获取元素的值		
+HTML操作：
+	获取内容
+		$(selector).html()			设置或获取元素中的HTML标记，设置内容时内容在括号内
+		$(selector).text()			设置或获取元素中的内容，设置内容时内容在括号内
+		$(selector).val()			设置或者获取表单元素中的值
+		$(selector).attr(attribute)	获取元素的值	
+	添加元素
+		append()  	在被选元素的结尾插入内容
+		prepend() 	在被选元素的开头插入内容
+		after() 	在被选元素之后插入内容
+		before() 	在被选元素之前插入内容
+		这四个函数相对于insertAdjacentHTML()
+	删除元素
+		remove()			删除被选元素（及其子元素）
+		empty() 			从被选元素中删除子元素
+		remove('selector')	删除被选元素中的选中的子元素
+	jQuery 开关css
+		addClass() 			向被选元素添加一个或多个类
+		removeClass() 	 	从被选元素删除一个或多个类
+		toggleClass() 	 	对被选元素进行添加/删除类的切换操作
+	css设置
+		$("p").css("background-color")									获取css属性值
+		$("p").css("background-color","yellow")							设置单个css属性值
+		$("p").css({"background-color":"yellow","font-size":"200%"})	设置多个css属性值
+	处理盒子模型边界
+		width()
+		height()
+		innerWidth()
+		innerHeight()
+		outerWidth()
+		outerHeight()
+	jQuery遍历
+		找祖先：
+			 $("span").parent();			找到父元素
+			$("span").parents();			找到所有父元素
+			$("span").parents("ul");		找到所有父元素中的UI元素
+			$("span").parentsUntil("div");	找到介于自己和div之间的父元素
+		找后代：
+			children()				返回被选元素的所有直接子元素。
+			$("div").find("span")	返回被选元素的后代元素
+			$("div").find("*")		返回所有后代
+		找同胞
+			$("h2").siblings();		返回被选中元素的所有同胞元素，不包括同胞的子元素
+			$("h2").siblings("p")	返回属于 <h2> 的同胞元素的所有 <p> 元素
+			$("h2").next()			next() 方法返回被选元素的下一个同胞元素
+			$("h2").nextAll()		返回被选元素的所有跟随的同胞元素
+			$("h2").nextUntil("h6")	返回介于两个给定参数之间的所有跟随的同胞元素
