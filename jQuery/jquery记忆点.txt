@@ -76,3 +76,12 @@ HTML操作：
 			$("h2").next()			next() 方法返回被选元素的下一个同胞元素
 			$("h2").nextAll()		返回被选元素的所有跟随的同胞元素
 			$("h2").nextUntil("h6")	返回介于两个给定参数之间的所有跟随的同胞元素
+			prev(), prevAll() 以及 prevUntil() 方法的工作方式与上面的方法类似
+		过滤
+			$("div p").first()		选取首个 <div> 元素内部的第一个 <p> 元素（两个第一个）
+			$("div p").last()		选择最后一个 <div> 元素中的最后一个 <p> 元素（两个最后一个）
+			$("p").eq(1);			索引第二个p标签
+			$("p").filter(".url")	返回带有类名 "url" 的所有 <p> 元素
+			$("p").not(".url")		not() 方法与 filter() 相反，返回不带有类名 "url" 的所有 <p> 元素
+		jQuery ajax
+			
