@@ -1,0 +1,67 @@
+普通VIP项目
+日记本2016 链接：https://eyun.baidu.com/s/3o8atAAY 密码：KZbM
+
+新闻发布系统2016 链接：https://eyun.baidu.com/s/3slMW45R 密码：oeXB
+
+
+权限系统2016 链接：https://eyun.baidu.com/s/3i5HNhBJ 密码：7c0g
+
+学生信息管理系统2016 链接：https://eyun.baidu.com/s/3hst2C8O 密码：SCPP
+
+在线考试系统2016 链接：https://eyun.baidu.com/s/3pL6LAgN 密码：adGw
+
+S2SH商城系统2016  链接：https://eyun.baidu.com/s/3mhIgJIK 密码：nWY6
+
+
+设备管理系统2016 链接：https://eyun.baidu.com/s/3jIQ89ee 密码：ITku
+
+
+SpringMvc+Mybatis客户关系管理系统2016 链接：https://eyun.baidu.com/s/3jHYzN2u 密码：QTWy
+
+
+
+至尊VIP项目
+SSM博客系统-就业项目2016 链接：https://eyun.baidu.com/s/3qYjITu0 密码：Xtnb
+
+基于Activiti5的学生请假流程系统2016 链接：https://eyun.baidu.com/s/3cxIDrC 密码：0ZoQ
+
+百度云搜索引擎-赚钱项目 链接：https://eyun.baidu.com/s/3eSfZ8wa 密码：BNfA
+
+百度云搜索引擎V2.0 链接：https://eyun.baidu.com/s/3hrKXMO8 密码：XUMj
+
+SSM实用网站CMS内容管理系统 链接：https://eyun.baidu.com/s/3geVmqCb 密码：x2xz
+
+java爬虫项目-jar包下载网 链接：https://eyun.baidu.com/s/3dFkPXNr 密码：nzAf
+
+java爬虫项目-博客采集系统  链接：https://eyun.baidu.com/s/3o7KUEKi 密码：M6S4
+
+java爬虫项目-百度云爬虫系统 链接：https://eyun.baidu.com/s/3c2rMGJQ 密码：CMyU
+
+SpringBoot打造电影网站 链接：https://eyun.baidu.com/s/3nvQdK3B 密码：uo8T
+
+SpringBoot打造企业级进销存 链接：https://eyun.baidu.com/s/3eRBShP4 密码：n9RD
+
+
+说明：
+所有视频是加密的，需要用专用播放器看（目前支持Windows,Mac）；
+专用播放下载
+链接：https://eyun.baidu.com/s/3c2xE68w 密码：C2Se
+使用的时候，会提示机器码，发给我即可；
+(备注：此教程属于java1234官方内部VIP教程，受法律版权保护，请勿泄漏出去，谢谢)
+
+常见问题
+1，打开播放器，出现eclipse提示退出,或者是浏览器提示退出；
+解决方法：请把含有有save,user的jsp文件重新命名下，比如把save改成svae;
+
+2,播放器打开视频黑屏；
+解决方法：把播放器以及视频放D盘根目录；
+
+3，Mac下播放器无法打开；
+解决方法，右击播放器，选择第二个打开方式；
+
+经常关注下Java1234 有新的vip项目出来。你直接问我要。
+
+支付宝在线支付接入视频教程 链接：https://pan.baidu.com/s/1ObGWfK564h0_v5RBbYyuew 密码：115q （用普通播放器打开即可）
+
+微信在线支付接入视频教程 链接：https://pan.baidu.com/s/1L-9s_u9k09HU6KGjlyA-tQ 密码：kmep  （用普通播放器打开即可） （持续更新中）
+
