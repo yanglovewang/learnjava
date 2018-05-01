@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>用户管理</title>
+<link rel="stylesheet" type="text/css"
+	href="jquery-easyui-1.3.3/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css"
+	href="jquery-easyui-1.3.3/themes/icon.css">
+<script type="text/javascript" src="jquery-easyui-1.3.3/jquery.min.js"></script>
+<script type="text/javascript"
+	src="jquery-easyui-1.3.3/jquery.easyui.min.js"></script>
+<script type="text/javascript"
+	src="jquery-easyui-1.3.3/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="userManage.js"></script>
+<style type="text/css" src="userManage.css"></style>
+</head>
+<body>
+<table id="id-userManage-grid" class="easyui-datagrid" fit="true" toolbar="#toolBar" pagination="true"
+        data-options="url:'datagrid_data.json',fitColumns:true,singleSelect:true">   
+    <thead>   
+        <tr>   
+            <th data-options="field:'userId',width:50">编码</th>   
+            <th data-options="field:'userName',width:50">用户名</th>   
+            <th data-options="field:'password',width:50">用户密码</th>
+            <th data-options="field:'roleName',width:50">用户角色</th>
+            <th data-options="field:'roleDescription',align:'center',width:50">备注</th>   
+        </tr>   
+    </thead>   
+</table>  
+<div id="toolBar">
+<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true, text:'修改'">修改</a>
+<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-help',plain:true">帮助</a>
+<a href="javascript:addUser()" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">用户增加</a>
+<a href="javascript:remove()" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">用户删除</a>
+<div>
+	用户名：<input type="text" id="id-input-userName" name="userName">
+	角色:  <input type="password" id="id-input-password" name="userName" class="easyui-combobox">
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" >搜搜</a>
+</div>
+</div>
+<div id="id-div-addDialog" buttons="#dlg-buttons">
+	<table cellspacing="5px" >
+		<tr>
+			<td>用户名：</td>
+			<td><input id="vv" class="easyui-validatebox" data-options="required:true" /></td>
+			<td>&nbsp;&nbsp;</td>
+			<td>密码：</td>
+			<td><input id="vv" class="easyui-validatebox" data-options="required:true" /></td>						
+		</tr>
+		<tr>
+			<td>角色名称：</td>
+			<td colspan="4"><input id="vv" class="easyui-validatebox" data-options="required:true" /></textarea></td>
+		</tr>
+		<tr>
+			<td>描述：</td>
+			<td colspan="4"><textarea rows="10" cols="30"></textarea></td>
+		</tr>
+	</table>
+</div>
+<div id="dlg-buttons">
+	<a href="javascript:modifyPassword()" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
+	<a href="javascript:closeAddUserDialog()" class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
+</div>
+</body>
+</html>
