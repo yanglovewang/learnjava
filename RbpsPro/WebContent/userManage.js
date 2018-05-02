@@ -108,6 +108,7 @@ $(function() {
 	
 })// end $(function())
 
+var url
 var addUser = function() {
 	$('#id-div-addDialog').dialog({    
 	    title: 'My Dialog',    
@@ -116,10 +117,40 @@ var addUser = function() {
 	    cache: false,        
 	    modal: true   
 	});
+	
+	url="UserServlet?action=saveUser"
 	}
 
 var closeAddUserDialog = function() {
 	$('#id-div-addDialog').dialog({
 		closed: true,
 	})
+}
+
+var saveModifyOrAddUser = function() {
+	$('#id-form-addDialog').form('submit', {
+		url:url,
+        onSubmit: function(){
+            return $(this).form('validate');
+        },
+		success: function(data) {
+			var o = eval('('+data+')')
+			console.log(o.message)
+			if(o.message == 'success') {
+				$.messager.alert('系统提示', o.userName + '保存成功')
+			} else {
+				$.messager.alert('系统提示', '保存失败')
+			}
+			clearForm()
+			$('#id-div-addDialog').dialog('close')
+		},
+ 	})
+}
+
+var clearForm = function() {
+	$('#id-div-addDialog').form('clear')
+}
+
+var modifyUser = function() {
+	
 }

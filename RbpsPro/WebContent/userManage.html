@@ -29,7 +29,7 @@
     </thead>   
 </table>  
 <div id="toolBar">
-<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true, text:'修改'">修改</a>
+<a href="javascript:modifyUser()" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true, text:'修改'">修改</a>
 <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-help',plain:true">帮助</a>
 <a href="javascript:addUser()" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">用户增加</a>
 <a href="javascript:remove()" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">用户删除</a>
@@ -40,26 +40,28 @@
 </div>
 </div>
 <div id="id-div-addDialog" buttons="#dlg-buttons">
-	<table cellspacing="5px" >
+	<form id="id-form-addDialog" method="post">
+		<table cellspacing="5px" >
 		<tr>
 			<td>用户名：</td>
-			<td><input id="vv" class="easyui-validatebox" data-options="required:true" /></td>
+			<td><input name="userName" id="id-input-userName" class="easyui-validatebox" data-options="required:true" /></td>
 			<td>&nbsp;&nbsp;</td>
 			<td>密码：</td>
-			<td><input id="vv" class="easyui-validatebox" data-options="required:true" /></td>						
+			<td><input name="passWord" id="id-pwd-passWord" class="easyui-validatebox" data-options="required:true" /></td>						
 		</tr>
 		<tr>
 			<td>角色名称：</td>
-			<td colspan="4"><input id="vv" class="easyui-validatebox" data-options="required:true" /></textarea></td>
+			<td colspan="4"><input name="roleName" id="id-input-roleName" class="easyui-validatebox" data-options="required:true" /></textarea></td>
 		</tr>
 		<tr>
 			<td>描述：</td>
-			<td colspan="4"><textarea rows="10" cols="30"></textarea></td>
+			<td colspan="4"><textarea name="deriction" id="id-textarea-decri" rows="10" cols="30"></textarea></td>
 		</tr>
 	</table>
+	</form>
 </div>
 <div id="dlg-buttons">
-	<a href="javascript:modifyPassword()" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
+	<a href="javascript:saveModifyOrAddUser()" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
 	<a href="javascript:closeAddUserDialog()" class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
 </div>
 </body>
