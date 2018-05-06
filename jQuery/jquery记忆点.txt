@@ -36,8 +36,10 @@ HTML操作：
 		$(selector).val()			设置或者获取表单元素中的值
 		$(selector).attr(attribute)	获取元素的值	
 	添加元素
+		被选元素内部
 		append()  	在被选元素的结尾插入内容
 		prepend() 	在被选元素的开头插入内容
+		被选元素外部
 		after() 	在被选元素之后插入内容
 		before() 	在被选元素之前插入内容
 		这四个函数相对于insertAdjacentHTML()

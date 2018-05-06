@@ -1,0 +1,12 @@
+package test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class UserTest {
+	
+	public void fun(){
+		ApplicationContext ac = ClassPathXmlApplicationContext("applicationContext.xml");
+		
+	}
+}

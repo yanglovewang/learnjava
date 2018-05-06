@@ -1,0 +1,18 @@
+<html>  
+ <head>  
+ <title>24.htm insertAdjacentHTML插入新内容</title>  
+ <script language="jscript">  
+ function addsome()  
+ {  
+     document.all.paral.insertAdjacentHTML("afterBegin","<h1> 在文本前容器内插入内容1</h1>");  
+     document.all.paral.insertAdjacentHTML("beforeEnd","<h2> 在文本后容器内插入内容2</h2>");  
+     document.all.paral.insertAdjacentHTML("beforeBegin","<h4> 在文本前容器外插入内容4</h1>");  
+     document.all.paral.insertAdjacentHTML("afterEnd","<h5> 在文本后容器外插入内容5</h2>");  
+ }  
+   
+</script>  
+ </head>  
+ <body onload="addsome()">  
+ <div id="paral" style="fontsize:6;color='#ff00ff'" mce_style="fontsize:6;color='#ff00ff'">原来的内容</div><hr>  
+ </body>  
+ </html>   
