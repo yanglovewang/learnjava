@@ -1,5 +1,7 @@
 package bean;
 
+import java.lang.reflect.Field;
+
 public class Car {
 	private String  name;
 	private String color;
@@ -21,5 +23,12 @@ public class Car {
 		return "Car [name=" + name + ", color=" + color + "]";
 	}
 	
-	
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, SecurityException {
+		Class c = new Car().getClass();
+		String name = c.getName();
+		System.out.println(name);
+		//System.out.println(c.getField("name"));
+		System.out.println(c.getMethods());
+		System.out.println(c.getDeclaredFields());
+	}
 }

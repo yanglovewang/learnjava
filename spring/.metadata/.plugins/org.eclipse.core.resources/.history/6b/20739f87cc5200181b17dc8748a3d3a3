@@ -1,0 +1,52 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+
+import com.mysql.jdbc.PreparedStatement;
+
+import model.User;
+import util.DbUtil;
+
+public class UserDaoImpro implements UserDao {
+
+	@Override
+	public void add(User user) {
+		System.out.println("add");
+	}
+
+	@Override
+	public void insert(int userId) {
+		
+		
+	}
+
+	@Override
+	public void find(int userId) {
+		Connection conn = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		try {
+			conn = new DbUtil().getCon();
+			String sql = "select * from user where id = 1";
+			ps = conn.createStatement(sql);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				System.out.println("查询到的类型" + rs.getInt("type"));
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			try {
+				rs.close();
+				ps.close();
+				conn.close();
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		}
+	}
+
+}

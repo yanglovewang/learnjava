@@ -1,0 +1,12 @@
+package daili;
+
+public class ManWaiter implements Waiter {
+
+	@Override
+	public void server() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

@@ -1,0 +1,11 @@
+package test;
+
+import org.junit.runner.RunWith;
+
+public class testJunit {
+	@RunWith()
+	public void fun1() {
+		
+	}
+
+}

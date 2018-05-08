@@ -1,0 +1,26 @@
+package Reflect1;
+
+import java.lang.reflect.Field;
+
+import org.junit.Test;
+
+public class Reflect1 {
+	
+	@Test
+	public void fun1() throws InstantiationException, IllegalAccessException {
+		Car car = new Car();
+		Car c2 = car.getClass().newInstance();
+		System.out.println(c2 == car); //false
+		System.out.println(c2.toString());
+		System.out.println(car.toString());
+	}
+	@Test
+	public void fun2() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Class c = Class.forName("Reflect1.Car");
+		Field[] fs = c.getFields();
+		for (Field field : fs) {
+			System.out.println(fs);
+		}
+	}
+
+}

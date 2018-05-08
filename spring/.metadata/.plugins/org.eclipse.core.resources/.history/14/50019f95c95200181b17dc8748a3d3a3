@@ -1,0 +1,34 @@
+package util;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+public class ProxyFactory {
+
+	private Object targetObject;
+	
+	public Object createProxyFactory() {
+		
+		ClassLoader classLoader = this.getClass().getClassLoader();
+		Class[] interfaces = targetObject.getClass().getInterfaces();
+		InvocationHandler h = new SonInvocationHandler(targetObject);
+		Proxy.newProxyInstance(classLoader, interfaces, h)
+		return null;
+	}
+}
+
+class SonInvocationHandler implements InvocationHandler {
+	private Object targetObject;
+	public SonInvocationHandler(Object o) {
+		this.targetObject = o;
+	}
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		System.out.println("开始数据库查询工作");
+		Object obj = method.invoke(targetObject, args);
+		System.out.println("结束数据库查询工作");
+		return obj;
+	}
+	
+}

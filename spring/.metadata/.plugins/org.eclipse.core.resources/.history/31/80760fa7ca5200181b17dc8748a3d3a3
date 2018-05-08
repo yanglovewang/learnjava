@@ -1,0 +1,32 @@
+package dao;
+
+import java.sql.Connection;
+
+import model.User;
+import util.DbUtil;
+
+public class UserDaoImpro implements UserDao {
+
+	@Override
+	public void add(User user) {
+		System.out.println("add");
+	}
+
+	@Override
+	public void insert(int userId) {
+		
+		
+	}
+
+	@Override
+	public void find(int userId) {
+		Connection conn = null;
+		try {
+			conn = new DbUtil().getCon();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

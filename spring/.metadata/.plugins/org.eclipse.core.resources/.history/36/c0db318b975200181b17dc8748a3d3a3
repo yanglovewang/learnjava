@@ -1,0 +1,11 @@
+package daili;
+
+public class ManWaiter implements Waiter {
+
+	public void server() {
+		System.out.println("服务客人");
+	}
+	
+	
+
+}

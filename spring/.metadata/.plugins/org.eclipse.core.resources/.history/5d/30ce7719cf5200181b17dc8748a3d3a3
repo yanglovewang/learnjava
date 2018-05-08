@@ -1,0 +1,10 @@
+package dao;
+
+import model.User;
+
+public interface UserDao {
+
+	public void add(User user);
+	public void insert(int userId);
+	public void find(int userId);
+}
