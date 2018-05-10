@@ -2,4 +2,5 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
   <system systemId="http://www.springframework.org/schema/beans/spring-beans-4.2.xsd" uri="file:///F:/BaiduNetdiskDownload/【阶段07】Spring/spring-day01/spring-day01/resource/spring-framework-4.2.4.RELEASE/schema/beans/spring-beans-4.2.xsd"/>
   <system systemId="http://www.springframework.org/schema/context/spring-context-4.2.xsd" uri="file:///F:/BaiduNetdiskDownload/【阶段07】Spring/spring-day01/spring-day01/resource/spring-framework-4.2.4.RELEASE/schema/context/spring-context-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/aop/spring-aop-4.2.xsd" uri="file:///F:/BaiduNetdiskDownload/【阶段07】Spring/spring-day01/spring-day01/resource/spring-framework-4.2.4.RELEASE/schema/aop/spring-aop-4.2.xsd"/>
 </catalog>

@@ -1,0 +1,20 @@
+package advice;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class MyAdvice {
+	
+	public void before() {
+		System.out.println("前置通知");
+	}
+	
+	public void afterReturning() {
+		System.out.println("后置通知（异常不掉用）");
+	}
+
+	public void arround(ProceedingJoinPoint pjp) throws Throwable{
+		System.out.println("环绕通知前");
+		Object proceed = pjp.proceed();  //掉用目标方法代码
+		System.out.println("环绕通知后");
+	}
+}

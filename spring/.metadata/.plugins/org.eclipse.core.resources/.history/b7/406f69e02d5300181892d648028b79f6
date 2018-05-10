@@ -1,0 +1,11 @@
+package Test;
+
+public class UserDaoImpro implements UserDao {
+
+	@Override
+	public void Say() {
+		System.out.println("say st");
+	}
+
+	
+}

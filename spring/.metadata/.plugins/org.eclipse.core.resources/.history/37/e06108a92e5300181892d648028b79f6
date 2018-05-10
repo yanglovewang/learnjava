@@ -1,0 +1,8 @@
+package Test;
+
+public class ProxyFactory {
+	
+	Object targetObject;
+	
+
+}

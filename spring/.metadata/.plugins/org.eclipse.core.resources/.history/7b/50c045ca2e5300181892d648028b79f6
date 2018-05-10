@@ -1,0 +1,12 @@
+package Test;
+
+public class ProxyFactory {
+	
+	Object targetObject;
+	Pre p = new PreImpro();
+	Aff a = new AffDoSth();
+	
+	public Object createProxy() {
+		return null;
+	}
+}

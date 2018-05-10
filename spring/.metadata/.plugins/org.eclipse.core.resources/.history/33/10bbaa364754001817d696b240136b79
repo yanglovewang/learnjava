@@ -1,0 +1,19 @@
+package server;
+
+
+
+import org.junit.Test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+public class Test1 {
+	
+	@Test
+	public void fun() {
+		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("springAop/applicationContext.xml");
+		UserServiceImpl ui = (UserServiceImpl) applicationContext.getBean("userService");
+		ui.find();
+		applicationContext.close();
+	}
+}

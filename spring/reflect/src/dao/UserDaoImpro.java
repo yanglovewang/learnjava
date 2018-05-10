@@ -22,7 +22,7 @@ public class UserDaoImpro implements UserDao {
 
 	@Override
 	public void find(int userId, Connection conn, PreparedStatement ps, ResultSet rs) {
-		// TODO Auto-generated method stub
+		conn
 		
 	}
 

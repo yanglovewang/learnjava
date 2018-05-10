@@ -1,0 +1,6 @@
+package Test;
+
+public interface Pre {
+	
+	public void preDoSth();
+}

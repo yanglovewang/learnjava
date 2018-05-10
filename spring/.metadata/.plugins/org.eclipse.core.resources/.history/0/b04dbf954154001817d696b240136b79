@@ -1,0 +1,8 @@
+package server;
+
+public class Test {
+
+	public void fun() {
+		
+	}
+}
