@@ -1,0 +1,14 @@
+package cn.itcast.demo1;
+
+public class Test {
+	
+	public void fun(){
+		String s;
+		if(s == null) {
+			s = "str";
+		} else {
+			s = "";
+		}
+	}
+
+}
