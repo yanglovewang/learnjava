@@ -54,4 +54,27 @@ ifconfig 查看网络信息、
 
 netstat -an 查看端口
 
+图形化界面安装： https://jingyan.baidu.com/article/219f4bf790f4c7de442d3825.html
+
+安装火狐
+	一： 安装火狐命令
+	yum -y install firefox
+	二：浏览器显示中文
+	yum install fonts-chinese
+	yum install fonts-ISO8859-2-75dpi
+	修改 /etc/sysconfig/i18n ，内容如下
+	LANG="en_US.UTF-8"
+	SYSFONT="lat0-sun16"
+	
+打开桌面
+    gnome-open .
+切换到桌面
+	startx
+解除yum的锁定
+rm -f/var/run/yum.pid
+
+
+关机、重启、注销
+https://blog.csdn.net/wx3957156/article/details/52024735
+
 
